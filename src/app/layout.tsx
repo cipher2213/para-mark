@@ -2,8 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout } from "@/components";
-import AuthProvider from "./auth-provider";
-import { Toaster } from 'react-hot-toast';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -33,12 +31,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <AuthProvider>
-          <Toaster position="top-center" />
-          <Layout>
-            {children}
-          </Layout>
-        </AuthProvider>
+        <Layout>
+          {children}
+        </Layout>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
