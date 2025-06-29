@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FiMinus, FiPlus, FiShoppingCart } from 'react-icons/fi'; // Install react-icons if not already installed
-import toast from "react-hot-toast";
 
 interface MenuItemCardProps {
   name: string;

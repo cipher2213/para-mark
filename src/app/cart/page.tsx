@@ -6,8 +6,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FiMinus, FiPlus, FiTrash2, FiArrowLeft, FiPhone } from 'react-icons/fi';
 import { useRouter } from 'next/navigation';
-import { useSession } from "next-auth/react";
-import toast from 'react-hot-toast';
 
 interface CartItem {
   name: string;
